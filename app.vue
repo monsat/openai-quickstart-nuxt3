@@ -9,9 +9,11 @@ const submit = async () => {
 
   const method = 'POST'
   const body = { animal: animal.value }
+  const initialCache = false
   const { data } = await useFetch('/api/generate', {
     method,
     body,
+    initialCache,
   })
 
   result.value = data.value?.result || 'Sorry, Error has occurred'
