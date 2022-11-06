@@ -1,42 +1,39 @@
-# Nuxt 3 Minimal Starter
+# OpenAI API Quickstart - Nuxt 3 example app
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Nuxt 3](https://v3.nuxtjs.org/) framework with [Vue.js](https://vuejs.org/). Check out the tutorial or follow the instructions below to get set up.
+
+See also: https://github.com/openai/openai-quickstart-node
 
 ## Setup
 
-Make sure to install the dependencies:
+1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/)
 
-```bash
-# yarn
-yarn install
+2. Clone this repository
 
-# npm
-npm install
+3. Navigate into the project directory
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+   ```bash
+   $ cd openai-quickstart-nuxt3
+   ```
 
-## Development Server
+4. Install the requirements
 
-Start the development server on http://localhost:3000
+   ```bash
+   $ yarn install
+   ```
 
-```bash
-npm run dev
-```
+5. Make a copy of the example environment variables file
 
-## Production
+   ```bash
+   $ cp .env.example .env
+   ```
 
-Build the application for production:
+6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
 
-```bash
-npm run build
-```
+7. Run the app
 
-Locally preview production build:
+   ```bash
+   $ yarn dev
+   ```
 
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
